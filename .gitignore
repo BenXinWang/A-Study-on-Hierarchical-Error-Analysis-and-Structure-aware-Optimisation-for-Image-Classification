@@ -126,16 +126,17 @@ features/*.npz
 !features/.gitkeep
 
 # Training logs and results (can be regenerated)
-results/*.log
-results/*.png
-results/*.jpg
-results/*.jpeg
-results/*.pdf
-results/prototype_*.html
-results/error_samples/
-results/predictions/
-results/visualizations/
-results/reports/
+# Note: All results content is now tracked for repository sharing
+# results/*.log
+# results/*.png
+# results/*.jpg
+# results/*.jpeg
+# results/*.pdf
+# results/prototype_*.html
+# results/error_samples/
+# results/predictions/
+# results/visualizations/
+# results/reports/
 !results/*.json
 !results/*.csv
 !results/*.txt
