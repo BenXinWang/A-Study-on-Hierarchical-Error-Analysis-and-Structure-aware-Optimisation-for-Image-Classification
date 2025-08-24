@@ -1,0 +1,9 @@
+Subclass Cross-Validation Training Summary
+==================================================
+Timestamp: 20250824_043055
+Total folds: 3
+Successful folds: 3
+Mean validation accuracy: 69.98% ± 0.50%
+Best validation accuracy: 70.44% (fold 1)
+Best model saved to: checkpoints/cv_fold_0/best_models/subclass_best.pth
+Results file: results/subclass_cv_training_results_20250824_043055.json

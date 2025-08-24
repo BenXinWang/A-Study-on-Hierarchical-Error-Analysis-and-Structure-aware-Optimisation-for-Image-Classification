@@ -1,0 +1,34 @@
+{
+  "n_folds": 3,
+  "successful_folds": 3,
+  "mean_validation_accuracy": 69.98333333333333,
+  "std_validation_accuracy": 0.49841972495299425,
+  "best_validation_accuracy": 70.44,
+  "best_fold": 0,
+  "fold_results": [
+    {
+      "fold": 0,
+      "validation_accuracy": 70.44,
+      "status": "success",
+      "log_file": "checkpoints/logs/subclass_cv_fold_0_training_log_20250823_222135.txt"
+    },
+    {
+      "fold": 1,
+      "validation_accuracy": 70.22,
+      "status": "success",
+      "log_file": "checkpoints/logs/subclass_cv_fold_1_training_log_20250824_003601.txt"
+    },
+    {
+      "fold": 2,
+      "validation_accuracy": 69.29,
+      "status": "success",
+      "log_file": "checkpoints/logs/subclass_cv_fold_2_training_log_20250824_023554.txt"
+    }
+  ],
+  "timestamp": "2025-08-24T04:30:55.991877",
+  "training_logs": [
+    "checkpoints/logs/subclass_cv_fold_0_training_log_20250823_222135.txt",
+    "checkpoints/logs/subclass_cv_fold_1_training_log_20250824_003601.txt",
+    "checkpoints/logs/subclass_cv_fold_2_training_log_20250824_023554.txt"
+  ]
+}

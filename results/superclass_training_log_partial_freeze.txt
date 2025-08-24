@@ -1,0 +1,10 @@
+Superclass Cross-Validation Training Summary (Partial-Freeze)
+============================================================
+Timestamp: 20250824_011045
+Freeze strategy: conservative partial-freeze (Layer4 unfrozen)
+Total folds: 3
+Successful folds: 3
+Mean validation accuracy: 95.75% ± 0.09%
+Best validation accuracy: 95.85% (fold 1)
+Best model saved to: checkpoints/cv_fold_0/best_models/superclass_best.pth
+Results file: results/superclass_cv_training_results_20250824_011045.json

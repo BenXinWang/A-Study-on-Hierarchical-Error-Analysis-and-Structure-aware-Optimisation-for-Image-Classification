@@ -1,0 +1,156 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyTorch model files
+*.pth
+*.pt
+*.ckpt
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# IDE
+.vscode/
+.idea/
+.cursor/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ========================================
+# PROJECT SPECIFIC IGNORES
+# ========================================
+
+# Large dataset files (can be downloaded)
+data/cifar-100-python/
+data/*.tar.gz
+data/*.zip
+scripts/data/cifar-100-python.tar.gz
+scripts/*/data/cifar-100-python.tar.gz
+
+# Training checkpoints and logs
+checkpoints/train_*/
+checkpoints/superclass_partial_freeze_*/
+checkpoints/cv_fold_*/
+checkpoints/logs/
+checkpoints/best_models/
+!checkpoints/config.json
+
+# Generated feature files (can be regenerated)
+features/features.pt
+features/prototypes.pt
+features/*.pkl
+features/*.npy
+features/*.npz
+!features/metadata.csv
+!features/.gitkeep
+
+# Training logs and results (can be regenerated)
+results/*.log
+results/*.png
+results/*.jpg
+results/*.jpeg
+results/*.pdf
+results/prototype_*.html
+results/error_samples/
+results/predictions/
+results/visualizations/
+results/reports/
+!results/*.json
+!results/*.csv
+!results/*.txt
+!results/subclass_training_log.txt
+!results/superclass_training_log_partial_freeze.txt
+!results/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+.cache/
+temp/
+tmp/
+
+# Log files
+*.log
+logs/
