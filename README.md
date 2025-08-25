@@ -545,9 +545,6 @@ pip install -r requirements.txt
 ```bash
 # Prepare CIFAR-100 dataset (automatic on first run)
 python scripts/data/prepare_dataset.py
-
-# Add superclass labels to test set
-python scripts/data/add_superclass_labels.py
 ```
 
 #### **Step 3: Feature Extraction and Visualization**
