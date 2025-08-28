@@ -39,7 +39,7 @@ class Pipeline:
             'results_dir': project_root / 'results',
             'batch_size': 32,
             'num_workers': 4,
-            'device': 'mps' if torch.backends.mps.is_available() else 'cpu',  # 优先使用 MPS
+            'device': 'mps' if torch.backends.mps.is_available() else 'cpu',  # Prefer MPS
             'feature_dim': 2048,
             'image_size': 32,
         }
@@ -76,7 +76,7 @@ class Pipeline:
             root=str(self.config['data_dir']),
             train=False,
             transform=transform,
-            download=False  # 已经在prepare_dataset步骤下载了
+            download=False  # Already downloaded in prepare_dataset step
         )
         
         test_loader = DataLoader(

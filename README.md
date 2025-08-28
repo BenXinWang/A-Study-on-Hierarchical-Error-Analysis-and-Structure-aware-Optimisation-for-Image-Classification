@@ -541,19 +541,13 @@ conda activate cifar100
 pip install -r requirements.txt
 ```
 
-#### **Step 2: Data Preparation**
+#### **Step 2: Complete Feature Extraction Pipeline**
 ```bash
-# Prepare CIFAR-100 dataset (automatic on first run)
-python scripts/data/prepare_dataset.py
-```
-
-#### **Step 3: Feature Extraction and Visualization**
-```bash
-# Run complete feature extraction pipeline
+# Run complete feature extraction pipeline (includes data preparation)
 python scripts/pipeline/run_pipeline.py
 ```
 
-#### **Step 4: Cross-Validation Model Training**
+#### **Step 3: Cross-Validation Model Training**
 ```bash
 # Train subclass model with 3-fold cross-validation (60 epochs per fold)
 python scripts/training/train_subclass_cv.py --epochs 60 --n_folds 3 --batch_size 128
@@ -562,7 +556,7 @@ python scripts/training/train_subclass_cv.py --epochs 60 --n_folds 3 --batch_siz
 python scripts/training/train_superclass_cv.py --epochs 40 --n_folds 3 --batch_size 128
 ```
 
-#### **Step 5: Complete Evaluation**
+#### **Step 4: Complete Evaluation**
 ```bash
 # Run complete evaluation pipeline
 python scripts/run_complete_evaluation.py
@@ -592,26 +586,20 @@ The script reads the CV results files to determine the best performing fold and 
 
 ##### **1. Data Processing and Feature Extraction**
 
-**Data Preparation:**
+**Complete Feature Extraction Pipeline:**
 ```bash
-# Prepare CIFAR-100 dataset
-python scripts/data/prepare_dataset.py
-
-# Add superclass labels
-python scripts/data/add_superclass_labels.py
-```
-
-**Feature Extraction Pipeline:**
-```bash
+# Run complete pipeline (includes data preparation and all subsequent steps)
 python scripts/pipeline/run_pipeline.py
 ```
 
 **This pipeline includes:**
-1. Data preparation and validation
+1. Data preparation and validation (automatic CIFAR-100 download)
 2. Feature extraction using ResNet-50
 3. Prototype calculation
 4. Visualization generation
-5. Label verification
+5. Label verification and superclass label addition
+
+**Note**: The pipeline automatically handles data preparation, so you don't need to run individual scripts separately.
 
 **Outputs:**
 - Features: `features/features.pt`
